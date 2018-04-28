@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomCollectionViewCell: UICollectionViewCell {
+class NewsCollectionViewCell: UICollectionViewCell {
   
     @IBOutlet weak var itemLabel: UILabel!
     @IBOutlet weak var itemImage: UIImageView!

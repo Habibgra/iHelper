@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--My Profile-->
+        <!--User-->
         <scene sceneID="3gl-4o-LCH">
             <objects>
                 <viewController id="A4A-8u-ZAE" sceneMemberID="viewController">
@@ -21,11 +21,106 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="5zG-7a-eaC"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My Profile" id="1KP-wg-2W7"/>
+                    <tabBarItem key="tabBarItem" title="User" id="1KP-wg-2W7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b7D-PT-7Ab" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-386" y="238"/>
+            <point key="canvasLocation" x="-644" y="-96"/>
+        </scene>
+        <!--iHelper MiniLab-->
+        <scene sceneID="nDS-g6-4eb">
+            <objects>
+                <viewController id="csq-zM-2hV" customClass="MiniLabViewController" customModule="iHelper_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wqA-jB-Vnn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Motito" translatesAutoresizingMaskIntoConstraints="NO" id="7F4-Kk-kmI">
+                                <rect key="frame" x="67" y="84" width="240" height="174"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="hTT-3N-B5g">
+                                <rect key="frame" x="67" y="282" width="240" height="183.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">iHelper MiniLab es el primer laboratorio movil de la Argentina, con la funcionalidad de reparar tus dispositivos en el acto y/o si requieren soluciones avanzadas transportarlos a la central para luego devolverlos en su hogar, y si no te parece encendé el GPS y anda a chequearlo a la Trakeada concha de tu hermana.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="La motito mas cercana está:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tf6-Pc-s1k">
+                                <rect key="frame" x="67" y="480" width="240" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyA-ND-s1g">
+                                <rect key="frame" x="67" y="509" width="240" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZa-w6-bBQ">
+                                <rect key="frame" x="67" y="550" width="240" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Ver En el Mapa">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="KLX-FP-0gy" kind="show" id="rA7-dQ-29H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="JKw-6y-ite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="iHelper MiniLab" id="CgX-M4-8Z5"/>
+                    <connections>
+                        <outlet property="label" destination="DyA-ND-s1g" id="v50-pc-5E8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zzW-hT-2uj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-644" y="610"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="vi4-Qm-Gzo">
+            <objects>
+                <viewController id="KLX-FP-0gy" customClass="MapViewController" customModule="iHelper_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YiX-He-12C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="u0D-Z1-QGJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSf-BR-4RC">
+                                <rect key="frame" x="141" y="553" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Soy un Boton"/>
+                                <connections>
+                                    <action selector="toggleUser:" destination="KLX-FP-0gy" eventType="touchUpInside" id="F9c-Se-Ubn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="u0D-Z1-QGJ" firstAttribute="top" secondItem="587-4f-sdM" secondAttribute="top" id="Ao2-fx-AaT"/>
+                            <constraint firstItem="587-4f-sdM" firstAttribute="trailing" secondItem="u0D-Z1-QGJ" secondAttribute="trailing" id="Lcg-co-M9h"/>
+                            <constraint firstItem="u0D-Z1-QGJ" firstAttribute="leading" secondItem="587-4f-sdM" secondAttribute="leading" id="TAG-Pk-K5I"/>
+                            <constraint firstItem="587-4f-sdM" firstAttribute="bottom" secondItem="u0D-Z1-QGJ" secondAttribute="bottom" id="TrV-lu-ch5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="587-4f-sdM"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="u0D-Z1-QGJ" id="hjc-LJ-fRI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lnd-Zq-HRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="68" y="610"/>
         </scene>
         <!--CollectionViewController-->
         <scene sceneID="03x-Wx-fMo">
@@ -42,7 +137,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="UpP-uS-WDq" customClass="CustomCollectionViewCell" customModule="iHelper_App" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="UpP-uS-WDq" customClass="NewsCollectionViewCell" customModule="iHelper_App" customModuleProvider="target">
                                 <rect key="frame" x="37.5" y="0.0" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -77,6 +172,7 @@
                                 <connections>
                                     <outlet property="itemImage" destination="1LV-D4-fck" id="MQL-kO-EwK"/>
                                     <outlet property="itemLabel" destination="KUq-mZ-OHJ" id="xLA-V5-u6W"/>
+                                    <segue destination="gW8-DG-KTT" kind="show" id="qO2-gh-htq"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -85,57 +181,95 @@
                             <outlet property="delegate" destination="In7-FG-Y0Q" id="AiP-jj-AHm"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Time Line" id="G7O-QK-kLi"/>
+                    <navigationItem key="navigationItem" title="Noticias y Promociones" id="GZv-F0-XJq"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Agk-u0-hek" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-386.39999999999998" y="-476.31184407796104"/>
+            <point key="canvasLocation" x="-644" y="-772"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="6G4-ac-ylE">
+        <!--News Detail View Controller-->
+        <scene sceneID="Qj3-Jk-WvR">
             <objects>
-                <tableViewController id="utc-25-q6P" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="K1w-Ve-9Gf">
+                <viewController id="gW8-DG-KTT" customClass="NewsDetailViewController" customModule="iHelper_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iXx-NU-Ir3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NewsDetails" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aj-XE-jbP">
+                                <rect key="frame" x="142" y="323" width="95" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="KN3-EF-yvI">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KN3-EF-yvI" id="xSW-3j-yEe">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="utc-25-q6P" id="3T8-8E-UX7"/>
-                            <outlet property="delegate" destination="utc-25-q6P" id="doT-NS-Dng"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="d4G-oR-6HV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <viewLayoutGuide key="safeArea" id="R9E-7h-Abu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EET-ks-PVM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="374" y="-476"/>
+            <point key="canvasLocation" x="68" y="-772"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--MiniLab-->
         <scene sceneID="HB3-DK-erx">
             <objects>
-                <tabBarController id="Eoy-pv-clC" sceneMemberID="viewController">
+                <tabBarController title="MiniLab" id="Eoy-pv-clC" customClass="TabBarController" customModule="iHelper_App" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KQM-En-6rY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="ODc-4c-XFM" kind="relationship" relationship="viewControllers" id="YM9-gc-wQX"/>
+                        <segue destination="uRC-aS-2of" kind="relationship" relationship="viewControllers" id="Yr6-1G-yv3"/>
                         <segue destination="A4A-8u-ZAE" kind="relationship" relationship="viewControllers" id="Wr2-Ui-eTw"/>
-                        <segue destination="In7-FG-Y0Q" kind="relationship" relationship="viewControllers" id="YM9-gc-wQX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QQD-wb-oo0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1338" y="-95"/>
         </scene>
+        <!--MiniLab-->
+        <scene sceneID="EsZ-ud-Ww4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uRC-aS-2of" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="MiniLab" id="agR-s0-xap"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OAP-AI-DhU">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="csq-zM-2hV" kind="relationship" relationship="rootViewController" id="NR7-Th-26P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O4n-59-tN9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1338" y="611"/>
+        </scene>
+        <!--Noticias-->
+        <scene sceneID="rgu-z2-zt0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ODc-4c-XFM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Noticias" id="G7O-QK-kLi"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GuG-VP-jAy">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="In7-FG-Y0Q" kind="relationship" relationship="rootViewController" id="s6D-0X-A5R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8kS-kp-DTD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1338" y="-772"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Motito" width="650" height="488"/>
+    </resources>
 </document>
