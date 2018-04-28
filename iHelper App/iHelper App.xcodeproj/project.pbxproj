@@ -13,6 +13,8 @@
 		172AE6BE2093F65500EE8CC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 172AE6BD2093F65500EE8CC0 /* Assets.xcassets */; };
 		172AE6C12093F65500EE8CC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172AE6BF2093F65500EE8CC0 /* LaunchScreen.storyboard */; };
 		172AE6D22093FBDD00EE8CC0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172AE6D12093FBDD00EE8CC0 /* TabBarController.swift */; };
+		172AE6D42093FE3400EE8CC0 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172AE6D32093FE3400EE8CC0 /* CollectionViewController.swift */; };
+		172AE6D62093FEBC00EE8CC0 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172AE6D52093FEBC00EE8CC0 /* CustomCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		172AE6C02093F65500EE8CC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		172AE6C22093F65500EE8CC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		172AE6D12093FBDD00EE8CC0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		172AE6D32093FE3400EE8CC0 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		172AE6D52093FEBC00EE8CC0 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		172AE6CC2093F7EB00EE8CC0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				172AE6D52093FEBC00EE8CC0 /* CustomCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				172AE6D12093FBDD00EE8CC0 /* TabBarController.swift */,
+				172AE6D32093FE3400EE8CC0 /* CollectionViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -194,6 +200,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				172AE6D42093FE3400EE8CC0 /* CollectionViewController.swift in Sources */,
+				172AE6D62093FEBC00EE8CC0 /* CustomCollectionViewCell.swift in Sources */,
 				172AE6D22093FBDD00EE8CC0 /* TabBarController.swift in Sources */,
 				172AE6BC2093F65200EE8CC0 /* iHelper_App.xcdatamodeld in Sources */,
 				172AE6B42093F65100EE8CC0 /* AppDelegate.swift in Sources */,

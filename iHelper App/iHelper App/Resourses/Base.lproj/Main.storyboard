@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Eoy-pv-clC">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,21 +26,52 @@
             </objects>
             <point key="canvasLocation" x="-386" y="238"/>
         </scene>
-        <!--Timeline-->
-        <scene sceneID="fKn-lB-cxS">
+        <!--CollectionViewController-->
+        <scene sceneID="03x-Wx-fMo">
             <objects>
-                <viewController id="fmR-Oy-eCw" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZCE-i5-PCi">
+                <collectionViewController title="CollectionViewController" id="In7-FG-Y0Q" customClass="CollectionViewController" customModule="iHelper_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="rnb-VK-Tcl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="KYF-QF-1Qi"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Timeline" badgeValue="2" id="92Y-VQ-rOf"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nDW-c6-HKM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SJq-vn-ozo">
+                            <size key="itemSize" width="211" height="213"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UpP-uS-WDq" customClass="CustomCollectionViewCell" customModule="iHelper_App" customModuleProvider="target">
+                                <rect key="frame" x="82" y="0.0" width="211" height="213"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="211" height="213"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUq-mZ-OHJ">
+                                            <rect key="frame" x="52" y="71" width="106" height="70"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <connections>
+                                    <outlet property="theLabel" destination="KUq-mZ-OHJ" id="7K4-Mk-dNF"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="In7-FG-Y0Q" id="VEI-O5-tvy"/>
+                            <outlet property="delegate" destination="In7-FG-Y0Q" id="AiP-jj-AHm"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="Time Line" id="G7O-QK-kLi"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Agk-u0-hek" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-386" y="-427"/>
+            <point key="canvasLocation" x="-386.39999999999998" y="-476.31184407796104"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="HB3-DK-erx">
@@ -52,8 +83,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="fmR-Oy-eCw" kind="relationship" relationship="viewControllers" id="FDD-gm-zsq"/>
                         <segue destination="A4A-8u-ZAE" kind="relationship" relationship="viewControllers" id="Wr2-Ui-eTw"/>
+                        <segue destination="In7-FG-Y0Q" kind="relationship" relationship="viewControllers" id="YM9-gc-wQX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QQD-wb-oo0" userLabel="First Responder" sceneMemberID="firstResponder"/>
