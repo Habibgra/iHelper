@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		172AE6B42093F65100EE8CC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172AE6B32093F65100EE8CC0 /* AppDelegate.swift */; };
-		172AE6B62093F65100EE8CC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172AE6B52093F65100EE8CC0 /* ViewController.swift */; };
 		172AE6B92093F65200EE8CC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172AE6B72093F65200EE8CC0 /* Main.storyboard */; };
 		172AE6BC2093F65200EE8CC0 /* iHelper_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 172AE6BA2093F65200EE8CC0 /* iHelper_App.xcdatamodeld */; };
 		172AE6BE2093F65500EE8CC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 172AE6BD2093F65500EE8CC0 /* Assets.xcassets */; };
 		172AE6C12093F65500EE8CC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172AE6BF2093F65500EE8CC0 /* LaunchScreen.storyboard */; };
+		172AE6D22093FBDD00EE8CC0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172AE6D12093FBDD00EE8CC0 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		172AE6B02093F65100EE8CC0 /* iHelper App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iHelper App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		172AE6B32093F65100EE8CC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		172AE6B52093F65100EE8CC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		172AE6B82093F65200EE8CC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		172AE6BB2093F65200EE8CC0 /* iHelper_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iHelper_App.xcdatamodel; sourceTree = "<group>"; };
 		172AE6BD2093F65500EE8CC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		172AE6C02093F65500EE8CC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		172AE6C22093F65500EE8CC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		172AE6D12093FBDD00EE8CC0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,71 @@
 		172AE6B22093F65100EE8CC0 /* iHelper App */ = {
 			isa = PBXGroup;
 			children = (
-				172AE6B32093F65100EE8CC0 /* AppDelegate.swift */,
-				172AE6B52093F65100EE8CC0 /* ViewController.swift */,
-				172AE6B72093F65200EE8CC0 /* Main.storyboard */,
-				172AE6BD2093F65500EE8CC0 /* Assets.xcassets */,
-				172AE6BF2093F65500EE8CC0 /* LaunchScreen.storyboard */,
+				172AE6CE2093F7F400EE8CC0 /* Main */,
+				172AE6CD2093F7F000EE8CC0 /* ViewController */,
+				172AE6CC2093F7EB00EE8CC0 /* View */,
+				172AE6CB2093F7E700EE8CC0 /* Model */,
+				172AE6CA2093F7E300EE8CC0 /* Service */,
+				172AE6C82093F7BB00EE8CC0 /* Dao */,
+				172AE6C92093F7CA00EE8CC0 /* Resourses */,
 				172AE6C22093F65500EE8CC0 /* Info.plist */,
 				172AE6BA2093F65200EE8CC0 /* iHelper_App.xcdatamodeld */,
 			);
 			path = "iHelper App";
+			sourceTree = "<group>";
+		};
+		172AE6C82093F7BB00EE8CC0 /* Dao */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dao;
+			sourceTree = "<group>";
+		};
+		172AE6C92093F7CA00EE8CC0 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				172AE6B72093F65200EE8CC0 /* Main.storyboard */,
+				172AE6BD2093F65500EE8CC0 /* Assets.xcassets */,
+				172AE6BF2093F65500EE8CC0 /* LaunchScreen.storyboard */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		172AE6CA2093F7E300EE8CC0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		172AE6CB2093F7E700EE8CC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		172AE6CC2093F7EB00EE8CC0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		172AE6CD2093F7F000EE8CC0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				172AE6D12093FBDD00EE8CC0 /* TabBarController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		172AE6CE2093F7F400EE8CC0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				172AE6B32093F65100EE8CC0 /* AppDelegate.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +194,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				172AE6D22093FBDD00EE8CC0 /* TabBarController.swift in Sources */,
 				172AE6BC2093F65200EE8CC0 /* iHelper_App.xcdatamodeld in Sources */,
-				172AE6B62093F65100EE8CC0 /* ViewController.swift in Sources */,
 				172AE6B42093F65100EE8CC0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
