@@ -9,9 +9,11 @@
 import UIKit
 
 private let reuseIdentifier = "Cell"
+private var categories: [String] = ["Motito", "Noticias", "Shop", "Nosotros"]
 
 class CollectionViewController: UICollectionViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -20,25 +22,14 @@ class CollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 200
+        return categories.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CustomCollectionViewCell
         
-        let r1 = CGFloat(arc4random_uniform(255))
-        let r2 = CGFloat(arc4random_uniform(255))
-        let r3 = CGFloat(arc4random_uniform(255))
-        let color = UIColor(red: r1/255.0,
-                            green: r2/255.0,
-                            blue: r3/255.0,
-                            alpha: 1.0)
-        
-        if let customCell = cell as? CustomCollectionViewCell {
-            cell.backgroundColor = color
-            customCell.setup(with: "\(r1):\(r2):\(r3)")
-        }
-        
+        cell.setup(text: categories[indexPath.row], image: UIImage.init(named: categories[indexPath.row])!)
+       
         return cell
     }
     

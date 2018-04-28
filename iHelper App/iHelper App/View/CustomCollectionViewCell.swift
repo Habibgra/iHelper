@@ -10,8 +10,11 @@ import UIKit
 
 class CustomCollectionViewCell: UICollectionViewCell {
   
-    @IBOutlet weak var theLabel: UILabel!
-    func setup(with text: String) {
-        theLabel.text = "Test"
+    @IBOutlet weak var itemLabel: UILabel!
+    @IBOutlet weak var itemImage: UIImageView!
+    
+    func setup( text: String, image: UIImage) {
+        itemLabel.text = text
+        itemImage.image = image
     }
 }
